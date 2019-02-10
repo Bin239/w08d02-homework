@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import PokemonContainer from "./PokemonContainer/index"
-//import Login from "./Login/Login"
+import Login from "./Login/Login"
 
 class App extends Component {
     constructor(){
@@ -49,6 +49,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+          
+            <Login/>
             
             {this.state.loading ? <span>Loading....</span>: <PokemonContainer pokemons = {this.state.pokemons}/>}
       </div>

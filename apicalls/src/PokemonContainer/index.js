@@ -12,12 +12,13 @@ const PokemonContainer = (props) => {
             </div>
         )
     })
-    
+
     return (
         <div>
             <h4>Pokemons</h4>
             <ul>
                 {pokemonContainer}
+                
             </ul>
         </div>
     )
